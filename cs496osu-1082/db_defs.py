@@ -29,3 +29,9 @@ class video_anime(ndb.Model):
     genre = ndb.StringProperty(repeated=True)
     episode = ndb.IntegerProperty()
     priority = ndb.IntegerProperty()
+
+class genre(ndb.Model):
+    name = ndb.StringProperty(required=True)
+
+class platform(ndb.Model):
+    name = ndb.StringProperty(required=True)

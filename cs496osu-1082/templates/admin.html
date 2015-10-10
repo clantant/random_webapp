@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Administration</title>
+    </head>
+    <body>
+        {% if genre %}
+        Genres:
+            <ul>
+            {% for item in genre %}
+                <li>{{ item.name }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+        {% if platform %}
+        Platforms:
+            <ul>
+            {% for item in platform %}
+                <li>{{ item.name }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+        Add new genres or platforms for selection.
+        <form method="post">
+            Genre:
+            <input type="text" name="genre">
+            <br>
+            Platform:
+            <input type="text" name="platform">
+            <br>
+            <input type="submit" value="save" name="action">
+        </form>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+    </body>
+</html>
