@@ -4,8 +4,22 @@
 <title>Media Tracker</title>
 </head>
 <body>
-
-<h1>Welcome to the Media Tracker</h1>
-
+    <a href="/home">Home/View</a>
+    <a href="/admin">Administration</a>
+    <a href="/edit">Edit items</a>
+    <a href="/add">Add items</a>
+    <h1>Welcome to the Media Tracker</h1>
+    {% if results %}
+    <table style="width:100%">
+        {% for entity,value in results.items() %}
+        <tr>
+            <td>{{ entity }}</td>
+            {% for item in value %}
+                <td>{{ item }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
 </body>
 </html>

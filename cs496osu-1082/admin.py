@@ -8,6 +8,7 @@ class Admin(base.BaseHandler):
         self.render('admin.html',context)
 
     def post(self):
+        context = {'genre':self.load_ndb('genre'),'platform':self.load_ndb('platform')}
         action = self.request.get('action')
         message = ''
         if action == 'save':
@@ -20,7 +21,8 @@ class Admin(base.BaseHandler):
             if info['name']:
                 self.store_ndb('platform', info)
                 message = message + 'Added ' + info['name'] + ' to the database. '
-            self.render('admin.html',{'message':message})
+            context['message'] = message
+            self.render('admin.html',context)
         else:
-            self.render('admin.html',{'message':'Action ' + action + ' is unknown.'})
-        
+            context['message'] = 'Action ' + action + ' is unknown.'
+            self.render('admin.html',context)
