@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add New Media</title>
+</head>
+<body>
+    <a href="/home">Home/View</a>
+    <a href="/admin">Administration</a>
+    <a href="/edit">Edit items</a>
+    <a href="/add">Add items</a>
+
+    <form method="post">
+        Choose what media to add: 
+        <select name="media">
+            <option value="video_shows">TV Shows</option>
+            <option value="videogames">Video Games</option>
+            <option value="video_movies">Movies</option>
+            <option value="video_anime">Anime</option>
+        </select><br>
+        Name: 
+        <input type="text" name="name"><br>
+        Platform: <br>
+        {% for item in platform %}
+        <input type="radio" name="platform" value="{{ item.name }}">{{ item.name }}
+        <br>
+        {% endfor %}
+        Genre: <br>
+        {% for item in genre %}
+        <input type="checkbox" name="genre" value="{{ item.name }}">{{ item.name }}
+        <br>
+        {% endfor %}
+        Priority: 
+        <input type="number" name="priority">
+        <br>
+        Finished? 
+        <input type="checkbox" name="complete" value="True">
+        <br>
+        Episode: 
+        <input type="number" name="episode">
+        <br>
+        <input type="submit" value="save" name="action">
+    </form>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>

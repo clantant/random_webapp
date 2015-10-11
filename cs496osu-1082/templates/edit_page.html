@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Media Tracker</title>
+<title>Edit Old Media</title>
 </head>
 <body>
     <a href="/home">Home/View</a>
@@ -11,24 +11,11 @@
     <h1>Welcome to the Media Tracker</h1>
     {% if results %}
     <table style="width:100%">
-        <tr>
-            <td>Type</td>
-            <td>Name</td>
-            <td>Complete?</td>
-            <td>Genre</td>
-            <td>Platform</td>
-            <td>Priority</td>
-            <td>Episode</td>
         {% for entity,value in results.items() %}
         <tr>
             <td>{{ entity }}</td>
             {% for item in value %}
-                <td>{{ item.name }}</td>
-                <td>{{ item.complete }}</td>
-                <td>{{ item.genre }}</td>
-                <td>{{ item.platform }}</td>
-                <td>{{ item.priority }}</td>
-                <td>{{ item.episode }}</td>
+                <td>{{ item }}</td>
             {% endfor %}
         </tr>
         {% endfor %}

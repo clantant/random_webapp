@@ -41,17 +41,17 @@ class BaseHandler(webapp2.RequestHandler):
 # If you add a new entity, give it a storage method here.
     def store_ndb(self, entity, info):
         if (entity == 'genre'):
-            _store_genre(info)
+            self._store_genre(info)
         elif (entity == 'platform'):
-            _store_platform(info)
+            self._store_platform(info)
         elif (entity == 'video_shows'):
-            _store_video_shows(info)
+            self._store_video_shows(info)
         elif (entity == 'videogames'):
-            _store_videogames(info)
+            self._store_videogames(info)
         elif (entity == 'video_movies'):
-            _store_video_movies(info)
+            self._store_video_movies(info)
         elif (entity == 'video_anime'):
-            _store_video_anime(info)
+            self._store_video_anime(info)
 
 
     def _store_video_shows(self, info):
@@ -60,9 +60,12 @@ class BaseHandler(webapp2.RequestHandler):
         item.name = info['name']
         item.platform = info['platform']
         item.complete = info['complete']
-        item.genre = info['genre']
-        item.episode = info['episode']
-        item.priority = info['priority']
+        genre = []
+        for x in info['genre']:
+            genre.append(''.join(x))
+        item.genre = genre
+        item.episode = int(info['episode'])
+        item.priority = int(info['priority'])
         item.put()
 
 
@@ -72,8 +75,11 @@ class BaseHandler(webapp2.RequestHandler):
         item.name = info['name']
         item.platform = info['platform']
         item.complete = info['complete']
-        item.genre = info['genre']
-        item.priority = info['priority']
+        genre= []
+        for x in info['genre']:
+            genre.append(''.join(x))
+        item.priority = int(info['priority'])
+        item.genre = genre
         item.put()
 
 
@@ -83,8 +89,11 @@ class BaseHandler(webapp2.RequestHandler):
         item.name = info['name']
         item.platform = info['platform']
         item.complete = info['complete']
-        item.genre = info['genre']
-        item.priority = info['priority']
+        genre = []
+        for x in info['genre']:
+            genre.append(''.join(x))
+        item.genre = genre
+        item.priority = int(info['priority'])
         item.put()
 
 
@@ -94,9 +103,12 @@ class BaseHandler(webapp2.RequestHandler):
         item.name = info['name']
         item.platform = info['platform']
         item.complete = info['complete']
-        item.genre = info['genre']
-        item.episode = info['episode']
-        item.priority = info['priority']
+        genre = []
+        for x in info['genre']:
+            genre.append(''.join(x))
+        item.genre = genre
+        item.episode = int(info['episode'])
+        item.priority = int(info['priority'])
         item.put()
 
 

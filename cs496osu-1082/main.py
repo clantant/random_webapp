@@ -5,6 +5,7 @@ config = {'shows':'video_shows','games':'videogames','movies':'video_movies','an
 
 app = webapp2.WSGIApplication([
     ('/', 'main_page.View'),
+    ('/home', 'main_page.View'),
     ('/edit', 'edit.Edit'),
     ('/add', 'add.Add'),
     ('/admin', 'admin.Admin'),
