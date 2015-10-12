@@ -20,17 +20,17 @@
             <td>Priority</td>
             <td>Episode</td>
         {% for entity,value in results.items() %}
+        {% for item in value %}
         <tr>
             <td>{{ entity }}</td>
-            {% for item in value %}
                 <td>{{ item.name }}</td>
                 <td>{{ item.complete }}</td>
                 <td>{{ item.genre }}</td>
                 <td>{{ item.platform }}</td>
                 <td>{{ item.priority }}</td>
                 <td>{{ item.episode }}</td>
-            {% endfor %}
         </tr>
+        {% endfor %}
         {% endfor %}
     </table>
     {% endif %}

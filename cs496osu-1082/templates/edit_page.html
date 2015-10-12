@@ -8,18 +8,47 @@
     <a href="/admin">Administration</a>
     <a href="/edit">Edit items</a>
     <a href="/add">Add items</a>
-    <h1>Welcome to the Media Tracker</h1>
     {% if results %}
+    <h2>Choose your media to edit</h2>
     <table style="width:100%">
         {% for entity,value in results.items() %}
+        {% for item in value %}
         <tr>
             <td>{{ entity }}</td>
-            {% for item in value %}
-                <td>{{ item }}</td>
-            {% endfor %}
+            <td>{{ item.name }}</td>
+            <td><a href="/edit?key={{ keys[item.name] }}&type=edit">Edit</a> | <a href="/edit?key={{ keys[item.name] }}&type=delete">Delete</a></td>
         </tr>
         {% endfor %}
+        {% endfor %}
     </table>
+    {% elif message %}
+    <p>{{ message }}</p>
+    {% elif info %}
+    <form method="post">
+        Name: 
+        <input type="text" name="name" value="{{ info.name }}"><br>
+        Platform: <br>
+        {% for item in platform %}
+        <input type="radio" name="platform" value="{{ item.name }}" {% if platform_check == item.name %}checked{% endif %}>{{ item.name }}
+        <br>
+        {% endfor %}
+        Genre: <br>
+        {% for item in genre %}
+        <input type="checkbox" name="genre" value="{{ item.name }}" {% if item.name in genre_check %}checked{% endif %}>{{ item.name }}
+        <br>
+        {% endfor %}
+        Priority: 
+        <input type="number" name="priority" value="{{ info.priority }}">
+        <br>
+        Finished? 
+        <input type="checkbox" name="complete" value="True" {% if info.complete %}checked{% endif %}>
+        <br>
+        Episode: 
+        <input type="number" name="episode" value="{{ info.episode }}">
+        <br>
+        <input type="hidden" name="key" value="{{ key_check }}">
+        <input type="submit" value="save" name="action">
+    </form>
     {% endif %}
 </body>
 </html>
