@@ -9,4 +9,5 @@ app = webapp2.WSGIApplication([
     ('/edit', 'edit.Edit'),
     ('/add', 'add.Add'),
     ('/admin', 'admin.Admin'),
+    ('/howto', 'howtwo.Root')
 ], debug=True, config=config)

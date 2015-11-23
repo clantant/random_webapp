@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How-To Jenkins</title>
+<link href="bootstrap.min.css" rel="stylesheet">
+    <link href="jumbotron.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../howto">Home</a>
+            <a class="navbar-brand" href="first.html">First</a>
+            <a class="navbar-brand" href="second.html">Second</a>
+            <a class="navbar-brand" href="third.html">Third</a>
+            <a class="navbar-brand" href="fourth.html">Fourth</a>
+            <a class="navbar-brand" href="five.html">Fifth</a>
+            <a class="navbar-brand" href="six.html">Sixth</a>
+            <a class="navbar-brand" href="seven.html">Seventh</a>
+        </div>
+    </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+    <h2>Building Other Jobs</h2>
+    <p>
+    With tests let's have our app be tested every time we build 
+    successfully. Go back to your compilation job and select 
+    "Build other projects" under the "Post-build Actions" section, you can
+    choose whether to "Trigger only if build is stable", which is great for
+    compiled jobs.
+    <p>
+    If you aren't dealing with critical pieces or you 
+    are linking a test job, for example, then "Trigger even if the build
+    is unstable" or "Trigger even if the build fails" may be good choices
+    instead. In the field for "Projects to build" add your testing job.
+    
+<img src="postbuild.jpg" class="img-responsive" >
+</div>
+</div>
+</body>

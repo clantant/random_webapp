@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How-To Jenkins</title>
+<link href="bootstrap.min.css" rel="stylesheet">
+    <link href="jumbotron.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../howto">Home</a>
+            <a class="navbar-brand" href="first.html">First</a>
+            <a class="navbar-brand" href="second.html">Second</a>
+            <a class="navbar-brand" href="third.html">Third</a>
+            <a class="navbar-brand" href="fourth.html">Fourth</a>
+            <a class="navbar-brand" href="five.html">Fifth</a>
+            <a class="navbar-brand" href="six.html">Sixth</a>
+            <a class="navbar-brand" href="seven.html">Seventh</a>
+        </div>
+    </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+    <h2>Building a Build Job</h2>
+    <p>
+    Now we will make our first job and have it set to compile a microsoft app. 
+    Choose new item and give it a good descriptive name such as "Compiling Phase". 
+    First add all of the build steps, these include any scripts or similar that 
+    you may need. 
+<img src="buildconfig1.jpg" class="img-responsive" >
+    <p>
+    Next we'll focus on the git aspect, first you need to select git under 
+    Source Code Management. This will ask for your Repository URL, a place to add your 
+    credentials, and which branch to build from. If you do not have any cleaning steps in 
+    your normal build process then it may be advisable to select "Clean before checkout" 
+    under additional behaviors. Select "Build when a change is pushed to GitHub" under "Build Triggers".
+<img src="github.jpg" class="img-responsive" >
+</div>
+</div>
+</body>

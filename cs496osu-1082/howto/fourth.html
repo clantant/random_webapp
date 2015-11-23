@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How-To Jenkins</title>
+<link href="bootstrap.min.css" rel="stylesheet">
+    <link href="jumbotron.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../howto">Home</a>
+            <a class="navbar-brand" href="first.html">First</a>
+            <a class="navbar-brand" href="second.html">Second</a>
+            <a class="navbar-brand" href="third.html">Third</a>
+            <a class="navbar-brand" href="fourth.html">Fourth</a>
+            <a class="navbar-brand" href="five.html">Fifth</a>
+            <a class="navbar-brand" href="six.html">Sixth</a>
+            <a class="navbar-brand" href="seven.html">Seventh</a>
+        </div>
+    </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+    <h2>Testing</h2>
+    <p>
+    Now you have an app that will be build whenever you push new code we
+    need to test it. Create a new job and call it something like "Testing Phase". 
+    You will add your tests to the build steps and if you are using something
+    like jUnit then under "Post-build Actions" choose "Publish JUnit test result report".
+    Write which folder your JUnit XMLs live next in the "Test report XMLs" field.
+    
+<img src="junit.jpg" class="img-responsive" >
+</div>
+</div>
+</body>
