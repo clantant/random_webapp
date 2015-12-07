@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Media_Tracker</title>
+
+    <!-- WinJS references -->
+    <link href="WinJS/css/ui-dark.css" rel="stylesheet" />
+    <script src="WinJS/js/base.js"></script>
+    <script src="WinJS/js/ui.js"></script>
+
+    <!-- Media_Tracker references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body class="win-type-body">
+    <div data-win-control="WinJS.UI.SplitView">
+    </div>
+    <h1>Home</h1>
+    <p>Track your media</p>
+    <input id="nameInput" type="text" />
+    <button id="helloButton" >GO HOME</button>
+    <div id="greetingOutput"></div>
+    <label for="ratingControlDiv">
+        Rate this greeting:
+    </label>
+    <div id="ratingControlDiv" data-win-control="WinJS.UI.Rating">
+    </div>
+    <div id="ratingOutput"></div>
+</body>
+</html>

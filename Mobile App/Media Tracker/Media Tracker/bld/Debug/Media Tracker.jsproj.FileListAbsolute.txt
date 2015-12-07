@@ -1,0 +1,16 @@
+F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bin\Debug\ReverseMap\resources.pri
+F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bin\Debug\AppxManifest.xml
+F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bin\Debug\Media Tracker.build.appxrecipe
+F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bld\Debug\ResourceHandlingTask.state
+F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bld\Debug\priconfig.xml
+F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bld\Debug\priconfig.xml.intermediate
+F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bld\Debug\layout.resfiles
+F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bld\Debug\layout.resfiles.intermediate
+F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bld\Debug\resources.resfiles
+F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bld\Debug\resources.resfiles.intermediate
+F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bld\Debug\pri.resfiles
+F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bld\Debug\pri.resfiles.intermediate
+F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bld\Debug\qualifiers.txt
+F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bld\Debug\qualifiers.txt.intermediate
+F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bld\Debug\ProjectArchitectures.txt

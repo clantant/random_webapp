@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ERIC-BEHEMOTH</Machine>
+    <WindowsUser>Eric</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>513e87ab-3d12-40e9-b610-44fe7042421b</PackageIdentityName>
+    <IntermediateOutputPath>F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bld\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>688DD2F904CAADBC5DBE7ED5109AB73969113E8FB75F37A37472840C6612963F</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>513e87ab-3d12-40e9-b610-44fe7042421b_1.0.0.0_neutral__0b9t7erj4py54</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>513e87ab-3d12-40e9-b610-44fe7042421b_0b9t7erj4py54!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>513e87ab-3d12-40e9-b610-44fe7042421b</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Eric</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-06T23:27:59.649</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2015-12-06T23:53:47.196</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\images\LockScreenLogo.scale-200.png">
+      <PackagePath>images\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2015-10-11T05:09:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\images\SplashScreen.scale-200.png">
+      <PackagePath>images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-10-11T05:09:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\images\Square150x150Logo.scale-200.png">
+      <PackagePath>images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-10-11T05:09:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\images\Square44x44Logo.scale-200.png">
+      <PackagePath>images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-10-11T05:09:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-10-11T05:09:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\images\StoreLogo.png">
+      <PackagePath>images\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-10-11T05:09:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\images\Wide310x150Logo.scale-200.png">
+      <PackagePath>images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-10-11T05:09:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2015-12-06T23:53:47.208</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\WinJS\js\en-US\ui.strings.js">
+      <PackagePath>WinJS\js\en-US\ui.strings.js</PackagePath>
+      <Modified>2015-12-06T19:43:50.677</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\WinJS\js\base.js">
+      <PackagePath>WinJS\js\base.js</PackagePath>
+      <Modified>2015-12-06T19:43:50.675</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\WinJS\js\ui.js">
+      <PackagePath>WinJS\js\ui.js</PackagePath>
+      <Modified>2015-12-06T19:43:50.689</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2015-10-11T05:09:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\WinJS\css\ui-dark.css">
+      <PackagePath>WinJS\css\ui-dark.css</PackagePath>
+      <Modified>2015-10-11T05:09:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\WinJS\css\ui-light.css">
+      <PackagePath>WinJS\css\ui-light.css</PackagePath>
+      <Modified>2015-10-11T05:09:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\WinJS\fonts\Symbols.ttf">
+      <PackagePath>WinJS\fonts\Symbols.ttf</PackagePath>
+      <Modified>2015-10-11T05:09:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="F:\school\random_webapp\Mobile App\Media Tracker\Media Tracker\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-12-06T23:27:59.361</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
